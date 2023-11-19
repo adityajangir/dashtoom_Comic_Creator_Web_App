@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comic Strip Generator</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Comic Strip Generator</h1>
+        <form id="comicForm">
+            <!-- Repeat the following block for panels 2-10 -->
+            <label for="panel1">Panel 1:</label>
+            <textarea id="panel1" name="panel1" rows="4" cols="50"></textarea>
+            
+            <button type="button" onclick="generateComic()">Generate Comic</button>
+        </form>
+        <div id="comicOutput"></div>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>
